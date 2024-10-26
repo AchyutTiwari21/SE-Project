@@ -250,6 +250,7 @@ footer{
     padding-left: 80px;
     display: flex;
     justify-content: space-between;
+    margin-top: 100px
 }
 
 #footer-image {
