@@ -1,15 +1,22 @@
-*{ margin: 0px; padding: 0px;
-    font-family: assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, Helvetica, sans-serif sans-serif ;
-    box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, Helvetica, sans-serif sans-serif;
+    box-sizing: border-box;
+}
 
 body {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBK48HlpTe0fbYfGkfGXTJYNJhaAS75rwqkQ&s);
+    background-image: url(./image/stock-photo.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    /* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBK48HlpTe0fbYfGkfGXTJYNJhaAS75rwqkQ&s */
+    /* https://media.istockphoto.com/id/1008124304/photo/qr-code-technology-wireless-network-connection-map-of-india.jpg?s=2048x2048&w=is&k=20&c=YQ6Gg1SeoN2Ue2KRiB1Bia1WOrJSlIyTzsdGqzOfoaM= */
 }
 
 header {
@@ -37,57 +44,60 @@ header {
 
 #ho {
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     font-size: 20px;
     margin-right: 20px;
 }
 
-#ho:hover{
+#ho:hover {
     color: purple;
 }
 
 #co {
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     font-size: 20px;
     margin-right: 20px;
 }
 
-#co:hover{
+#co:hover {
     color: purple;
 }
 
 #pr {
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     font-size: 20px;
 }
-#pr:hover{
+
+#pr:hover {
     color: purple;
 }
 
 #cm {
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     font-size: 20px;
     margin-right: 20px;
 }
-#cm:hover{
+
+#cm:hover {
     color: purple;
 }
 
 #bl {
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     font-size: 20px;
     margin-right: 20px;
 }
-#bl:hover{
+
+#bl:hover {
     color: purple;
 }
 
@@ -110,6 +120,7 @@ header {
     background-color: purple;
     box-shadow: 2px 2px 10px black;
 }
+
 #ge:hover {
     background-color: rgba(88, 7, 88, 0.655);
     box-shadow: 1px 1px 10px rgba(255, 192, 203, 0.416);
@@ -129,6 +140,7 @@ header {
     background-color: purple;
     box-shadow: 2px 2px 10px black;
 }
+
 #lo:hover {
     background-color: rgba(88, 7, 88, 0.655);
     box-shadow: 1px 1px 10px rgba(255, 192, 203, 0.416);
@@ -146,10 +158,11 @@ header {
 
 #header {
     width: 100%;
-    color:rgb(241, 217, 241);
-    font-size: 80px;
+    color: rgb(241, 217, 241);
+    font-size: 70px;
+    font-style: oblique;
     text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Dancing Script", cursive;
     text-shadow: 2px 2px 10px black;
 }
 
@@ -157,13 +170,14 @@ header {
     margin-top: 20px;
 }
 
-#p1{
+#p1 {
     width: 100%;
-    color:rgb(241, 217, 241);
+    color: hsl(0, 3%, 94%);
     font-size: 25px;
     text-align: left;
     margin-right: 50px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
     text-shadow: 1px 1px 10px black;
 }
 
@@ -224,15 +238,16 @@ header {
 
 @keyframes slideIn {
     from {
-        transform: translateY(100%);  
+        transform: translateY(100%);
     }
+
     to {
         transform: translateY(0);
     }
 }
 
 
-#image{
+#image {
     height: 800px;
     box-shadow: 5px 5px 50px black;
     margin-bottom: 50px;
@@ -243,7 +258,7 @@ header {
     position: relative;
 }
 
-footer{
+footer {
     border-top: 1px solid;
     border-color: rgba(255, 255, 255, 0.176);
     padding: 20px;
@@ -276,12 +291,14 @@ footer{
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .footer-link {
     color: rgba(201, 198, 198, 0.87);
     text-decoration: none;
 }
+
 .footer-link:hover {
-    color: purple;
+    color: #fff;
 }
 
 .footer-tag {
