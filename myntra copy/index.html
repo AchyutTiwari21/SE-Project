@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empowering Local Buisnesses</title>
+    <title>Empowering Local Business</title>
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
     <header>
         <div>
-            <img id="logo" src="./image/Website-Logo.jpg" alt="EMUSS">
+            <img id="logo" src="./image/EMBUSS.png" alt="EMBUSS">
         </div>
 
         <nav>
@@ -33,7 +33,24 @@
     <main>
         <div class="text">
             <div>
-                <h1 id="header">Get Your Own Website</h1>
+                <h1 id="header">
+
+                    <script>
+                        const text = "Get your own Website!";
+                        let index = 0;
+                        
+                        function typeEffect() {
+                            if (index < text.length) {
+                                document.getElementById("header").innerHTML += text.charAt(index);
+                                index++;
+                                setTimeout(typeEffect, 50); 
+                            }
+                        }
+                        window.onload = typeEffect;
+                    </script>
+
+                    </h1>
+
             </div>
             <div id="ridiv">
                 <h1 id="p1">Build your entire website and go online in this modern era of Online Shopping. Add all your products to the website and reach customers through online business stores. We are specialized in making E-Commerce and Business Website.</h1>
@@ -56,7 +73,7 @@
     <footer>
         <div id="footer-div">
         <div>
-            <img id="footer-image" src="./image/Website-Logo.jpg" alt="">
+            <img id="footer-image" src="./image/EMBUSS.png" alt="">
         </div>
 
         <div id="footer-text">
