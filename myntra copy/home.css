@@ -122,7 +122,6 @@ header {
 }
 
 #ge:hover {
-    background-color: rgba(88, 7, 88, 0.655);
     box-shadow: 1px 1px 10px rgba(255, 192, 203, 0.416);
     cursor: pointer;
 }
@@ -142,7 +141,6 @@ header {
 }
 
 #lo:hover {
-    background-color: rgba(88, 7, 88, 0.655);
     box-shadow: 1px 1px 10px rgba(255, 192, 203, 0.416);
     cursor: pointer;
 }
@@ -205,7 +203,6 @@ header {
 }
 
 #register:hover {
-    background-color: rgba(88, 7, 88, 0.655);
     box-shadow: 1px 1px 10px rgba(255, 192, 203, 0.416);
     cursor: pointer;
 }
@@ -224,7 +221,6 @@ header {
 }
 
 #sample:hover {
-    background-color: rgba(88, 7, 88, 0.655);
     box-shadow: 1px 1px 10px rgba(255, 192, 203, 0.416);
     cursor: pointer;
 }
