@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Options - Shopping Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .payment-container {
+      width: 300px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .payment-container h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .payment-option {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .payment-option input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .pay-button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #ffffff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .pay-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="payment-container">
+  <h2>Select Payment Method</h2>
+
+  <form id="payment-form">
+    <label class="payment-option">
+      <input type="radio" name="payment" value="cash" required>
+      Cash on Delivery
+    </label>
+    <label class="payment-option">
+      <input type="radio" name="payment" value="paypal">
+      PayPal
+    </label>
+
+    <button type="submit" class="pay-button">Confirm Payment</button>
+  </form>
+</div>
+
+<script>
+  document.getElementById('payment-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const selectedPayment = document.querySelector('input[name="payment"]:checked').value;
+    if (selectedPayment === 'cash') {
+      window.location.href = 'cod-details.html';
+    } else if (selectedPayment === 'paypal') {
+      alert('Redirecting to PayPal for payment.');
+      window.location.href = 'https://www.paypal.com/signin';
+    }
+  });
+</script>
+
+</body>
+</html>

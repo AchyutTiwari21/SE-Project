@@ -43,7 +43,7 @@ function displayBagSummary() {
   </div>
 </div>
 <button class="btn-place-order" onClick= ${localStorage.clear}> 
-  <a class="css-xjhrni" href="clone.html">PLACE ORDER</a>
+  <a class="css-xjhrni" href="payment.html">PLACE ORDER</a>
 </button>
   `
 }
